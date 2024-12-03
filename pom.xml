@@ -128,10 +128,16 @@
     
     <build>
     <plugins>
+        <!-- Spring Boot Maven Plugin -->
         <plugin>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <mainClass>com.reljicd.ShoppingCartApplication</mainClass>
+            </configuration>
         </plugin>
+
+        <!-- JaCoCo Maven Plugin -->
         <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
