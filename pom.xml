@@ -124,6 +124,18 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+    
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <mainClass>com.reljicd.ShoppingCartApplication</mainClass>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 
                  <plugin>
     <groupId>org.jacoco</groupId>
